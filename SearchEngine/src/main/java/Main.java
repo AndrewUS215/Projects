@@ -14,9 +14,12 @@ public class Main {
     private static NodeRoot firstNode;
 
     public static void main(String[] args) throws IOException {
-        firstNode = createFirstNode(URL);
-        createTreeNodeLink(firstNode);
-        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
+        String text = "Привет! Меня зовут Андрей. А леопард бегает быстрее всех. Даже быстрее Андрея.";
+        Morphology morphology = new Morphology();
+        morphology.morphologyList(text);
+//        firstNode = createFirstNode(URL);
+//        createTreeNodeLink(firstNode);
+//        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
     }
 
     public static NodeRoot createFirstNode(String path) throws IOException { //Метод для создания и инициализации первого узла
