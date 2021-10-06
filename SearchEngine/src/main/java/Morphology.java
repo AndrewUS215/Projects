@@ -30,9 +30,9 @@ public class Morphology {
                     !checkMorphInfo.get(0).contains("СОЮЗ")) {
                 List<String> wordBaseForm = luceneMorphology.getNormalForms(word);
                 if (checkRepeatWords.containsKey(word)) {
-                    checkRepeatWords.put(word, checkRepeatWords.get(word) + 1);
+                    checkRepeatWords.put(wordBaseForm.get(0), checkRepeatWords.get(word) + 1);
                 } else {
-                    checkRepeatWords.put(word, 1);
+                    checkRepeatWords.put(wordBaseForm.get(0), 1);
                 }
             }
         }
