@@ -14,7 +14,8 @@ public class Main {
     private static NodeRoot firstNode;
 
     public static void main(String[] args) throws IOException {
-        String text = "Привет! Меня зовут Андрей. А леопард бегает быстрее всех. Даже быстрее Андрея.";
+        String text = "Попробуйте передать на вход программы несколько разных текстов и\n" +
+                "проверьте, верно ли выдаётся список лемм с количествами";
         Morphology morphology = new Morphology();
         morphology.morphologyList(text);
 //        firstNode = createFirstNode(URL);
