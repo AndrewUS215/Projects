@@ -10,17 +10,18 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.regex.Pattern;
 
 public class Main {
-    private static final String URL = "http://www.playback.ru/";
+    private static final String URL = "https://www.playback.ru/";
     private static NodeRoot firstNode;
 
     public static void main(String[] args) throws IOException {
-        String text = "Попробуйте передать на вход программы несколько разных текстов и\n" +
-                "проверьте, верно ли выдаётся список лемм с количествами";
-        Morphology morphology = new Morphology();
-        morphology.morphologyList(text);
-//        firstNode = createFirstNode(URL);
-//        createTreeNodeLink(firstNode);
-//        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
+
+//        String text = "Попробуйте передать на вход программы несколько разных текстов и\n" +
+//                "проверьте, верно ли выдаётся список лемм с количествами";
+//        Morphology morphology = new Morphology();
+//        morphology.morphologyList(text);
+        firstNode = createFirstNode(URL);
+        createTreeNodeLink(firstNode);
+        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
     }
 
     public static NodeRoot createFirstNode(String path) throws IOException { //Метод для создания и инициализации первого узла
@@ -34,8 +35,8 @@ public class Main {
     public static Document createDocumentForUrl(String path) throws IOException { //Метод для создания документа
         return Jsoup.connect(path)
                 .userAgent("SearchEngineBot")
-                .referrer("http://www.google.com")
-                .timeout(3000)
+                .referrer("https://www.google.com")
+                .timeout(5000)
                 .get();
     }
 
