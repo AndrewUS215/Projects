@@ -28,6 +28,9 @@ public class CalculateDistanceByModeImpl implements CalculateService {
 
     public List<Result> calculateDistanceByCrowFlight(List<City> from, List<City> to) { // Считаю CrowFlight и записываю результаты
         List<Result> resultList = new ArrayList<>();
+        if (from.isEmpty() || to.isEmpty()) {
+            logger.warn("Lists of Cities are empty!");
+        }
         for (City cityFrom : from) {
             for (City cityTo : to) {
                 Result result = getResult(cityFrom, cityTo);
@@ -53,6 +56,7 @@ public class CalculateDistanceByModeImpl implements CalculateService {
                     .getSingleResult();
             return distance;
         } catch (NoResultException | NonUniqueResultException ignored) {
+            logger.warn("Something wrong with getting distance by cities!");
         }
         return new Distance();
     }
@@ -67,8 +71,11 @@ public class CalculateDistanceByModeImpl implements CalculateService {
                     result.setTo(distance.getToCity());
                     result.setFrom(distance.getFromCity());
                     result.setMatrixDistance(distance.getDistance());
+                } else {
+                    logger.warn("The distance is null!");
                 }
                 resultList.add(result);
+                logger.info("Results list with distances by Matrix is ready!");
             }
         }
         return resultList;
@@ -86,6 +93,7 @@ public class CalculateDistanceByModeImpl implements CalculateService {
                     logger.warn("Can't calculate distance by matrix");
                 }
                 resultList.add(result);
+                logger.info("Results list with distances by all types of calculations is ready!");
             }
         }
         return resultList;
