@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cities>
+    <city>
+        <latitude>55.45</latitude>
+        <longitude>37.37</longitude>
+        <name>Москва</name>
+    </city>
+    <city>
+        <latitude>59.22</latitude>
+        <longitude>39.88</longitude>
+        <name>Вологда</name>
+    </city>
+    <city>
+        <latitude>53.12</latitude>
+        <longitude>50.06</longitude>
+        <name>Самара</name>
+    </city>
+    <city>
+        <latitude>59.57</latitude>
+        <longitude>30.19</longitude>
+        <name>Санкт-Петербург</name>
+    </city>
+</cities>
