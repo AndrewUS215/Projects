@@ -1,8 +1,10 @@
 package com.example.calculatedistance.mode;
 
+import com.example.calculatedistance.dao.DistanceRepository;
 import com.example.calculatedistance.entity.City;
 import com.example.calculatedistance.entity.Distance;
 import com.example.calculatedistance.service.CityService;
+import com.example.calculatedistance.service.CityServiceImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,11 +22,16 @@ public class CalculateDistanceByModeImpl implements CalculateService {
 
     Logger logger = Logger.getLogger(CalculateDistanceByModeImpl.class);
 
-    @Autowired
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
+    private final CityServiceImpl cityService;
+    private final DistanceRepository distanceRepository;
 
     @Autowired
-    private CityService cityService;
+    public CalculateDistanceByModeImpl(EntityManager entityManager, CityServiceImpl cityService, DistanceRepository distanceRepository) {
+        this.entityManager = entityManager;
+        this.cityService = cityService;
+        this.distanceRepository = distanceRepository;
+    }
 
     public List<Result> calculateDistanceByCrowFlight(List<City> from, List<City> to) { // Считаю CrowFlight и записываю результаты
         List<Result> resultList = new ArrayList<>();
@@ -35,6 +42,11 @@ public class CalculateDistanceByModeImpl implements CalculateService {
             for (City cityTo : to) {
                 Result result = getResult(cityFrom, cityTo);
                 resultList.add(result);
+                Distance distance = new Distance();
+                distance.setDistance(result.getCrowFlightDistance());
+                distance.setFromCity(cityFrom);
+                distance.setToCity(cityTo);
+                distanceRepository.save(distance);
             }
         }
         return resultList;
@@ -47,18 +59,7 @@ public class CalculateDistanceByModeImpl implements CalculateService {
     }
 
     public Distance getDistanceByCities(City from, City to) {
-        Distance distance;
-        try {
-            distance = entityManager.createQuery("select Distance from Distance " +
-                            "where Distance.fromCity.id = :fromId and Distance.toCity.id = :toId", Distance.class)
-                    .setParameter("fromId", from.getId())
-                    .setParameter("toId", to.getId())
-                    .getSingleResult();
-            return distance;
-        } catch (NoResultException | NonUniqueResultException ignored) {
-            logger.warn("Something wrong with getting distance by cities!");
-        }
-        return new Distance();
+        return distanceRepository.getDistanceByFromCityAndToCity(from, to);
     }
 
     public List<Result> calculateDistanceByMatrix(List<City> from, List<City> to) { //Считаю Matrix и записываю результаты
@@ -89,6 +90,8 @@ public class CalculateDistanceByModeImpl implements CalculateService {
                 Distance distance = getMatrixDistance(cityFrom, cityTo);
                 if (distance.getDistance() != null) {
                     result.setMatrixDistance(distance.getDistance());
+                    result.setFrom(cityFrom);
+                    result.setTo(cityTo);
                 } else {
                     logger.warn("Can't calculate distance by matrix");
                 }

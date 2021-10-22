@@ -5,7 +5,10 @@ import com.example.calculatedistance.entity.City;
 import com.example.calculatedistance.entity.CityList;
 import com.example.calculatedistance.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -13,13 +16,14 @@ import javax.persistence.NonUniqueResultException;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.logging.Level;
 
 @Service
-public class CityServiceImpl implements CityService {
+public class CityServiceImpl {
 
     @Autowired
     private CityRepository cityRepository;
@@ -27,32 +31,23 @@ public class CityServiceImpl implements CityService {
     @Autowired
     private EntityManager entityManager;
 
-    @Override
     public List<City> getAllCities() {
         return cityRepository.findAll();
     }
 
-    @Override
-    public void saveCities() throws JAXBException, FileNotFoundException {
+    public void saveCities(@RequestPart MultipartFile multipartFile) throws JAXBException, IOException {
         JAXBContext context = JAXBContext.newInstance(City.class, CityList.class);
         Unmarshaller unmarshaller = context.createUnmarshaller();
         CityList cityList = (CityList) unmarshaller
-                .unmarshal(new FileReader("src/main/resources/cities.xml"));
+                .unmarshal(multipartFile.getInputStream());
         cityRepository.saveAll(cityList.getCityList());
     }
 
-    @Override
+    public List<City> getCitiesByName(Collection<String> strings) {
+        return cityRepository.findByNameIn(strings);
+    }
+
     public City getByCoordinates(Double latitude, Double longitude) {
-        City city;
-        try {
-            city = entityManager.createQuery("select City from City" +
-                            " where City.latitude = :latitude and City.longitude = :longitude", City.class)
-                    .setParameter("latitude", latitude)
-                    .setParameter("longitude", longitude)
-                    .getSingleResult();
-            return city;
-        } catch (NoResultException | NonUniqueResultException e) {
-        }
-        return new City();
+        return cityRepository.getCityByLatitudeAndLongitude(latitude, longitude);
     }
 }
