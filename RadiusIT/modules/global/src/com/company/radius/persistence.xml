@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="radius" transaction-type="RESOURCE_LOCAL">
+
+        <class>com.company.radius.entity.Student</class>
+        <class>com.company.radius.entity.Group</class>
+    </persistence-unit>
+</persistence>

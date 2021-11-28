@@ -13,9 +13,7 @@ public class Page {
     private int id;
 
     private String path;
-
     private int code;
-
     private String content;
 
     public int getId() {

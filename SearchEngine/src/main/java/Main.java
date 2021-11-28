@@ -15,16 +15,19 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+        getHttpElementsText(createDocumentForUrl(URL));
+
 //        String text = "Попробуйте передать на вход программы несколько разных текстов и\n" +
 //                "проверьте, верно ли выдаётся список лемм с количествами";
 //        Morphology morphology = new Morphology();
 //        morphology.morphologyList(text);
-        firstNode = createFirstNode(URL);
-        createTreeNodeLink(firstNode);
-        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
+
+//        firstNode = createFirstNode(URL);
+//        createTreeNodeLink(firstNode);
+//        new ForkJoinPool().invoke(new NodeLinkList(firstNode));
     }
 
-    public static NodeRoot createFirstNode(String path) throws IOException { //Метод для создания и инициализации первого узла
+    public static NodeRoot createFirstNode(String path) throws IOException {
         Document document = createDocumentForUrl(path);
         String content = document.toString();
         int code = document.connection().response().statusCode();
@@ -32,7 +35,7 @@ public class Main {
         return firstNode;
     }
 
-    public static Document createDocumentForUrl(String path) throws IOException { //Метод для создания документа
+    public static Document createDocumentForUrl(String path) throws IOException {
         return Jsoup.connect(path)
                 .userAgent("SearchEngineBot")
                 .referrer("https://www.google.com")
@@ -40,7 +43,7 @@ public class Main {
                 .get();
     }
 
-    public static void createTreeNodeLink(NodeRoot nodeRoot) throws IOException {  //Рекурсивный метод для создания дерева узлов
+    public static void createTreeNodeLink(NodeRoot nodeRoot) throws IOException {
         String nodeName = nodeRoot.getNodeName();
         Document document = createDocumentForUrl(nodeName);
         List<String> linkList = new ArrayList<>();
@@ -60,5 +63,11 @@ public class Main {
             nodeRoot.addChild(newNodeRoot);
             createTreeNodeLink(newNodeRoot);
         }
+    }
+
+    public static void getHttpElementsText(Document document) {
+        String documentText = document.getAllElements().text();
+        Morphology morphology = new Morphology();
+        morphology.morphologyList(documentText);
     }
 }

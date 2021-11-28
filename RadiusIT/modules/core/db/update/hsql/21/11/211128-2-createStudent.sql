@@ -1,0 +1,2 @@
+alter table RADIUS_STUDENT add constraint FK_RADIUS_STUDENT_ON_GROUP foreign key (GROUP_ID) references RADIUS_GROUP(ID);
+create index IDX_RADIUS_STUDENT_ON_GROUP on RADIUS_STUDENT (GROUP_ID);

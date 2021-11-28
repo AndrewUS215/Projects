@@ -1,4 +1,5 @@
 import org.apache.lucene.morphology.LuceneMorphology;
+import org.apache.lucene.morphology.english.EnglishLuceneMorphology;
 import org.apache.lucene.morphology.russian.RussianLuceneMorphology;
 
 import java.io.IOException;
@@ -24,19 +25,31 @@ public class Morphology {
         String pattern = "[^а-яё]";
         for (String word : words) {
             word = word.toLowerCase().replaceAll(pattern, "");
-            List<String> checkMorphInfo = luceneMorphology.getMorphInfo(word);
-            if (!checkMorphInfo.get(0).contains("МЕЖД") &&
-                    !checkMorphInfo.get(0).contains("ПРЕДЛ") &&
-                    !checkMorphInfo.get(0).contains("СОЮЗ")) {
-                List<String> wordBaseForm = luceneMorphology.getNormalForms(word);
-                if (checkRepeatWords.containsKey(word)) {
-                    checkRepeatWords.put(wordBaseForm.get(0), checkRepeatWords.get(word) + 1);
-                } else {
-                    checkRepeatWords.put(wordBaseForm.get(0), 1);
+            if (word.equals("")) {
+                continue;
+            } else {
+                List<String> checkMorphInfo = luceneMorphology.getMorphInfo(word);
+                if (!checkMorphInfo.get(0).contains("МЕЖД") &&
+                        !checkMorphInfo.get(0).contains("ПРЕДЛ") &&
+                        !checkMorphInfo.get(0).contains("СОЮЗ")) {
+                    List<String> wordBaseForm = luceneMorphology.getNormalForms(word);
+                    Lemma lemma = new Lemma();
+                    lemma.setLemma(wordBaseForm.get(0));
+
+
+//                    if (checkRepeatWords.containsKey(word)) {
+//                        checkRepeatWords.put(wordBaseForm.get(0), checkRepeatWords.get(word) + 1);
+//                    } else {
+//                        checkRepeatWords.put(wordBaseForm.get(0), 1);
+//                    }
                 }
             }
         }
         System.out.println(checkRepeatWords);
+    }
+
+    public void addResult(Lemma lemma) {
+        String lemmaName = lemma.getLemma();
     }
 
 }

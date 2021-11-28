@@ -7,7 +7,7 @@ public class DBConnection {
     public static Connection getConnection() {
         if (connection == null) {
             try {
-                String dbPass = "1974287040998Au!";
+                String dbPass = "root";
                 String dbUser = "root";
                 String dbName = "search_engine";
                 connection = DriverManager.getConnection(
@@ -47,7 +47,7 @@ public class DBConnection {
                 "id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, " +
                 "page_id INT NOT NULL, " +
                 "lemma_id INT NOT NULL, " +
-                "rank FLOAT NOT NULL, " +
+                "rank_ FLOAT NOT NULL, " +
                 "CONSTRAINT index_fk1 FOREIGN KEY (page_id) REFERENCES page (id) ON DELETE CASCADE, " +
                 "CONSTRAINT index_fk2 FOREIGN KEY (lemma_id) REFERENCES lemma (id) ON DELETE CASCADE)");
     }
@@ -71,4 +71,10 @@ public class DBConnection {
         preparedStatement.setString(3, content);
         preparedStatement.executeUpdate();
     }
+
+    public static void executeLemmaQuery(String lemmaName) {
+        String sqlQuery = "INSERT INTO lemma"
+    }
+
+
 }
