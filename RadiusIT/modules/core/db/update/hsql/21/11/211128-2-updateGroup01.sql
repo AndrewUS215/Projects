@@ -1,1 +1,0 @@
-create unique index IDX_RADIUS_GROUP_UNIQ_NUMBER_ on RADIUS_GROUP (NUMBER_);

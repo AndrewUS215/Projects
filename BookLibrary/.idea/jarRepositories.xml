@@ -16,5 +16,20 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Central Maven repository1" />
+      <option name="name" value="Central Maven repository https" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="geotoolkit-repo" />
+      <option name="name" value="geotoolkit-repo" />
+      <option name="url" value="https://repo.osgeo.org/repository/release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="netbeans" />
+      <option name="name" value="NetBeans" />
+      <option name="url" value="http://netbeans.apidesign.org/maven2/" />
+    </remote-repository>
   </component>
 </project>
