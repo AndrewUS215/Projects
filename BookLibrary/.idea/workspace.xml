@@ -4,13 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47078c56-5f51-49ff-84f9-21d2831d55df" name="Changes" comment="" />
+    <list default="true" id="3b6fdfc3-663d-4bc5-8f92-d6236458c3e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchEngine/SearchEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchEngine/SearchEngine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/src/main/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../andersen/src/main/resources/textfile.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="268aJdp9KdK1ywr52UytQGR9SPi" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="268eUg9U1xIdguwKFKAuTpIZVoK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,12 +46,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="47078c56-5f51-49ff-84f9-21d2831d55df" name="Changes" comment="" />
-      <created>1646807600028</created>
+      <changelist id="3b6fdfc3-663d-4bc5-8f92-d6236458c3e6" name="Changes" comment="" />
+      <created>1646809660375</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646807600028</updated>
+      <updated>1646809660375</updated>
+      <workItem from="1646809661499" duration="303000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
