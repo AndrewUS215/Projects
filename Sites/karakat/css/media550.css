@@ -1,0 +1,93 @@
+@media screen and (max-width: 550px) {
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .header_link_tel {
+      font-size: 16px;
+    }
+
+    .header_right_span_time {
+      font-size: 10px;
+    }
+
+    .header_left_city {
+      font-size: 10px;
+    }
+
+    .nav_list {
+      font-size: 16px;
+    }
+
+    .header_logo {
+      width: 200px;
+    }
+
+    .construction_trigger {
+      margin-top: 80px;
+      max-width: 180px;
+      font-size: 14px;
+      padding: 15px 11px 11px 11px;
+    }
+
+    .footer_content_domen {
+      font-size: 16px;
+    }
+    
+    .footer_content_tel {
+      font-size: 16px;
+    }
+
+    .header_right_tel {
+      align-items: center;
+      height: 30px;
+      background-size: 18px;
+    }
+
+    .header_right_time {
+      background-size: 18px;
+    }
+
+    .header_left {
+      background-size: 18px;
+    }
+
+    .section_characteristics_table {
+      font-size: 12px;
+    }
+
+  .section_characteristics_table th {
+      border-bottom: 2px solid #F2F8F8;
+    }
+  
+    .section_characteristics_table td {
+      border-bottom: 2px solid #F2F8F8;
+    }
+
+    .section_advantage_item_image img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .section_advantage_item {
+      width: 160px;
+      height: 150px;
+      border-radius: 12px;
+      margin-right: 15px;
+    }
+  
+    .section_advantage_item_text {
+      font-size: 14px;
+      min-width: 160px;
+      padding-top: 15px;
+    }
+
+    .footer_content_domen {
+      background-size: 18px;
+    }
+    
+    .footer_content_tel {
+      background-size: 18px;
+    }
+  }

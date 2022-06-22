@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media1030.css">
+    <link rel="stylesheet" href="css/media820.css">
+    <link rel="stylesheet" href="css/media700.css">
+    <link rel="stylesheet" href="css/media550.css">
+    <link rel="stylesheet" href="css/media490.css">
+    <link rel="stylesheet" href="css/media410.css">
+    <link rel="stylesheet" href="css/media310.css">
+    <script src="./js/script.js"></script>
+    <title>КАРАКАТ</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <a href="#header" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#header" class="popup_close">X</a>
+                <table class="construction_table">
+                    <tr>
+                        <td>
+                            Двигатель
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="5" min="0" max="5">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Коробка передач
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="1" min="0" max="5">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Мосты
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="1" min="0" max="5">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Тормоза
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="1" min="0" max="5">
+                            
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            Габариты
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="1" min="0" max="5">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Вес
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="0" min="0" max="5">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Грузоподъемность
+                        </td>
+                        <td>
+                            <span class="calc_summa" value="2000">2000</span>
+                        </td>
+                        <td class="count">
+                            <input onchange="a()" onclick="a()" class="count_form" type="number" name="count" value="1" min="0" max="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ИТОГО
+                        </td>
+                        <td>
+                            <span class="amount_result"></span>
+                        </td>
+                    </tr>
+                   <script>
+                    
+                   </script>
+                </table>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="header">
+        <div class="header_back">
+            <div class="container">
+                <h1 class="visually_hidden">
+                    Заголовок
+                </h1>
+                <div class="header_up">
+                    <div class="header_left">
+                        <div class="header_left_city">
+                            Вологда
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="header_right_time">
+                            <span class="header_right_span_time">10:00-20:00</span>
+                        </div>
+                        <div class="header_right_tel">
+                            <a href="tel:+7(987)6543210" class="header_link_tel">
+                                +7 (987) 654-32-10
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_middle">
+                    <img class="header_logo" src="image/logo.svg" alt="Logo">
+                </div>
+                <nav class="nav">
+                    <div>
+                      <ul class="nav_list">
+                        <li class="nav_item">
+                          <a href="#characteristic" class="nav_link">
+                            ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+                          </a>
+                        </li>
+                        <li class="nav_item">
+                          <a href="#advantage" class="nav_link">
+                            ПРЕИМУЩЕСТВА
+                          </a>
+                        </li>
+                        <li class="nav_item">
+                          <a href="#galary" class="nav_link">
+                            ГАЛЕРЕЯ
+                          </a>
+                        </li>
+                        <li class="nav_item">
+                          <a href="#report" class="nav_link">
+                            ОТЗЫВЫ
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+            <a href="#popup" class="construction_trigger">
+                СОБЕРИ СВОЙ КАРАКАТ!
+            </a>
+        
+        </div>
+    </header>
+    <main>
+        <section class="section_characteristics">
+            <div id="characteristic" class="section_assortment_title">
+                <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
+            </div>
+        <table class="section_characteristics_table">
+            <tr>
+                <td>
+                    Двигатель
+                </td>
+                <td>
+                    LIFAN
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Коробка передач
+                </td>
+                <td>
+                    4- ступенчатая ВАЗ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Мосты
+                </td>
+                <td>
+                    От ВАЗ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Тормоза
+                </td>
+                <td>
+                    Гидравлические
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    Габариты
+                </td>
+                <td>
+                    310*198*145
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Вес
+                </td>
+                <td>
+                    410 кг
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Грузоподъемность
+                </td>
+                <td>
+                    500 кг
+                </td>
+            </tr>
+        </table>
+        </section>
+        <section class="section_advantage">
+            <div id="advantage" class="section_advantage_title">
+                <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+            </div>
+            <div class="section_advantage_block">
+                <ul class="section_advantage_list">
+                    <li class="section_advantage_item">
+                        <div class="section_advantage_item_image">
+                            <img src="./image/cogs.svg" alt="Cogs">
+                        </div>
+                        <div class="section_advantage_item_text">
+                            <span> Продукция от производителя</span>
+                        </div>
+                    </li>
+                    <li class="section_advantage_item">
+                        <div class="section_advantage_item_image">
+                            <img src="./image/clover.svg" alt="Cogs">
+                        </div>
+                        <div class="section_advantage_item_text">
+                            <span> Надежность комплектующих</span>
+                        </div>
+                    </li>
+                    <li class="section_advantage_item">
+                        <div class="section_advantage_item_image">
+                            <img src="./image/book.svg" alt="Cogs">
+                        </div>
+                        <div class="section_advantage_item_text">
+                            <span> Простота использования</span>
+                        </div>
+                    </li>
+                    <li class="section_advantage_item">
+                        <div class="section_advantage_item_image">
+                            <img src="./image/robot.svg" alt="Cogs">
+                        </div>
+                        <div class="section_advantage_item_text">
+                            <span> Легкозаменяемые узлы агрегаты</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_content_domen">
+                    <span>
+                        2022 SergeyUskov.ru
+                    </span>
+                </div>
+                <div class="footer_content_tel">
+                    <a href="tel:+7(987)6543210" class="footer_link_tel">
+                        +7 (987) 654-32-10
+                    </a>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

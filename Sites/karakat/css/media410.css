@@ -1,0 +1,38 @@
+@media screen and (max-width: 410px) {
+
+    .header_left {
+        margin-left: 20px;
+    }
+
+    .header_right_time {
+        margin-right: 10px;
+        padding-left: 20px;
+        background-size: 16px;
+    }
+    
+    .header_right_tel {
+        margin-right: 10px;
+        padding-left: 20px;
+        background-size: 16px;
+    }
+
+    .header_left {
+        padding-left: 20px;
+        background-size: 16px;
+    }
+
+    .footer_content_tel {
+        padding-left: 20px;
+        background-size: 16px;
+    }
+
+    .footer_content_domen {
+        padding-left: 20px;
+        background-size: 16px;
+    }
+
+    .popup_content {
+        min-width: 280px;
+        font-size: 11px;
+    }
+}

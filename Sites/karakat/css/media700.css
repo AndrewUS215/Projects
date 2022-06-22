@@ -1,0 +1,41 @@
+@media screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .header_back {
+        min-height: 500px;
+        background-size: 800px;
+    }
+
+    .header_logo {
+        width: 250px;
+    }
+
+    .header_middle {
+        margin-top: 20px;
+    }
+
+    .nav {
+        margin-top: 15px;
+    }
+
+    .construction_trigger {
+        margin-top: 80px;
+        max-width: 200px;
+        font-size: 16px;
+    }
+
+    .section_characteristics_table {
+        font-size: 14px;
+    }
+
+    .section_characteristics_table th {
+        border-bottom: 3px solid #F2F8F8;
+    }
+    
+      .section_characteristics_table td {
+        border-bottom: 3px solid #F2F8F8;
+    }
+}

@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BookLibrary:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b6fdfc3-663d-4bc5-8f92-d6236458c3e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/config/ConfigTxtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/config/PathConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/connections/Authorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/connections/WebConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/CircuitCellControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/ControlButtonControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/DisconnectorControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/EarthKnifeControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/SeparatorControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/ShortCircuitControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/web/control/SwitchControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/Enum/TypesEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/YamlParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/dto/Infos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/dto/TemplateElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/dto/Templates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/main/java/ru/uskov/radius/yamlParser/dto/YamlList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/CircuitCellControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/ControlButtonControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/DisconnectorControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/EarthKnifeControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/SeparatorControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/ShortCircuitControllTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/controlElement/SwitchControlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_qa_tests_scada/src/test/java/serverPart/launch/LaunchScadaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/BookShelfController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/dto/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/dto/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/web-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app.config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchEngine/SearchEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchEngine/SearchEngine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../andersen/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../andersen/.idea/compiler.xml" beforeDir="false" />
@@ -26,8 +67,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,9 +96,112 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Automation_qa_test/Automation_QA_Test_Scada" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.web.dto" />
+      <recent name="org.example.web.services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrey.Uskov\Desktop\MyRep\Projects\BookLibrary\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BookLibrary" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.76" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/BookLibrary_war_exploded/login" />
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="BookLibrary:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/BookLibrary_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="f60c0d7a-8626-4cc5-a622-cc5a2e90c414" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63637" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="BookLibrary:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,11 +211,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646809660375</updated>
-      <workItem from="1646809661499" duration="303000" />
+      <workItem from="1646809661499" duration="11265000" />
+      <workItem from="1646975990992" duration="365000" />
+      <workItem from="1646982952190" duration="1933000" />
+      <workItem from="1647247982591" duration="4560000" />
+      <workItem from="1647594991749" duration="525000" />
+      <workItem from="1647595544500" duration="593000" />
+      <workItem from="1647757347171" duration="3001000" />
+      <workItem from="1647952511155" duration="595000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

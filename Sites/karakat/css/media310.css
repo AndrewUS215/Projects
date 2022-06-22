@@ -1,0 +1,90 @@
+@media screen and (max-width: 310px) {
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .header_up {
+        padding-top: 0;
+    }
+
+    .header_left {
+        margin-left: 20px;
+    }
+
+    .header_link_tel {
+        font-size: 10px;
+    }
+
+    .header_logo {
+        width: 120px;
+    }
+
+    .nav_list {
+        font-size: 10px;
+    }
+
+    .nav_item {
+        margin-bottom: 10px;
+    }
+
+    .header_right_time {
+        margin-right: 10px;
+        padding-left: 20px;
+        background-size: 14px;
+    }
+    
+    .header_right_tel {
+        margin-right: 10px;
+        padding-left: 20px;
+        background-size: 14px;
+    }
+
+    .header_left {
+        padding-left: 20px;
+        background-size: 14px;
+    }
+
+    .header_back {
+        min-height: 300px;
+        background-size: 500px;
+    }
+
+    .construction_trigger {
+        margin-left: 15px;
+        margin-top: 50px;
+        max-width: 130px;
+        font-size: 10px;
+        padding: 9px 7px 7px 7px;
+    }
+
+    .section_advantage_item {
+        width: 100px;
+        height: 90px;
+        border-radius: 8px;
+        margin-right: 8px;
+    }
+
+    .section_advantage_item_image {
+        padding-top: 10px;
+    }
+    
+    .section_advantage_item_text {
+        font-size: 10px;
+        min-width: 90px;
+        padding-top: 8px;
+    }
+
+    .footer_content_tel {
+        font-size: 10px;
+        padding-left: 20px;
+        background-size: 14px;
+        margin-right: 0px;
+    }
+
+    .footer_content_domen {
+        font-size: 10px;
+        padding-left: 20px;
+        background-size: 14px;
+    }
+}
