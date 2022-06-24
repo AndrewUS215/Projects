@@ -1,5 +1,9 @@
 @media screen and (max-width: 410px) {
 
+    .header_back {
+        background-size: 150%;
+    }
+
     .header_left {
         margin-left: 20px;
     }

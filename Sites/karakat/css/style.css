@@ -36,7 +36,7 @@
 
   h2 {
     padding-left: 30px;
-    color:#FFA500;
+    color:#ffdf00;
   }
 
   .section_characteristics_table {
@@ -65,18 +65,19 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: grey;
+    background-color: #697a6a;
     font-family: 'Muller', 'Gilroy', sans-serif;
     margin: 0;
   }
 
   a {
     text-decoration: none;
-    color: #FFA500;
+    color: #ffdf00;
   }
 
   a:hover {
-    color: chocolate;
+    text-shadow:#85ff00 5px 0 10px;
+    color: #fff087;
   }
 
   a:active {
@@ -101,7 +102,7 @@
   .header_back {
     background-size: cover;
     min-height: 800px;
-    background-image: url(../image/moto.jpg);
+    background-image: url(../image/Background.png);
     background-repeat: no-repeat;
     animation: bg-animation 25s ease-in-out infinite;
   }
@@ -150,7 +151,8 @@
   }
 
   .header_left_city:hover {
-    color: chocolate;
+    text-shadow:#85ff00 5px 0 10px;
+    color: #fff087;
   }
 
   .header_right_span_time {
@@ -158,7 +160,8 @@
   }
 
   .header_right_span_time:hover {
-    color: chocolate;
+    text-shadow:#85ff00 5px 0 10px;
+    color: #fff087;
   }
 
   .header_right_time {
@@ -195,7 +198,6 @@
     margin-top: 40px;
     font-size: 26px;
     justify-content: center;
-    color: #FFA500;
   } 
 
   .nav {
@@ -227,7 +229,7 @@
     margin-top: 200px;
     max-width: 230px;
     font-size: 18px;
-    background-color: #FFA500;
+    background-color: #ffdf00;
     border-radius: 15px;
     padding: 19px 15px 15px 15px;
   }
@@ -238,7 +240,7 @@
 
   .construction_trigger:hover {
     color: #F2F8F8;
-    box-shadow: 0 0 5px 2px #FFA500;
+    box-shadow: 0 0 5px 2px #85ff00;
   }
 
   .construction_table {
@@ -380,6 +382,57 @@
     text-align: center;
     min-width: 160px;
     padding-top: 30px;
+  }
+
+  /*Gallery*/
+
+  .section_gallery_list {
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  .section_gallery_item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .section_gallery_item img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .section_gallery_item:hover img {
+    transform: scale(1.3) rotate(5deg);
+    transition: all .7s ease;
+    text-shadow:#85ff00 5px 0 10px;
+  }
+
+  .section_gallery_item:hover .gallery_item_hover {
+    opacity: 1;
+  }
+
+  .gallery_item_hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    z-index: 2;
   }
 
   /*Footer*/

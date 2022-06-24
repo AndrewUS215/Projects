@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media2000.css">
+    <link rel="stylesheet" href="css/media1300.css">
     <link rel="stylesheet" href="css/media1030.css">
     <link rel="stylesheet" href="css/media820.css">
     <link rel="stylesheet" href="css/media700.css">
@@ -12,10 +14,13 @@
     <link rel="stylesheet" href="css/media490.css">
     <link rel="stylesheet" href="css/media410.css">
     <link rel="stylesheet" href="css/media310.css">
+    <link rel="stylesheet" href="css/gallery_popup.css">
     <script src="./js/script.js"></script>
     <title>КАРАКАТ</title>
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <div id="popup" class="popup">
         <a href="#header" class="popup_area"></a>
         <div class="popup_body">
@@ -138,7 +143,7 @@
                         </div>
                         <div class="header_right_tel">
                             <a href="tel:+7(987)6543210" class="header_link_tel">
-                                +7 (987) 654-32-10
+                                +7 (996) 945-13-26
                             </a>
                         </div>
                     </div>
@@ -160,7 +165,7 @@
                           </a>
                         </li>
                         <li class="nav_item">
-                          <a href="#galary" class="nav_link">
+                          <a href="#gallery" class="nav_link">
                             ГАЛЕРЕЯ
                           </a>
                         </li>
@@ -190,15 +195,23 @@
                     Двигатель
                 </td>
                 <td>
-                    LIFAN
+                    LIFAN/LONCIN
                 </td>
             </tr>
             <tr>
                 <td>
-                    Коробка передач
+                    Узел перелома
                 </td>
                 <td>
-                    4- ступенчатая ВАЗ
+                    Балка - газель
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Вариатор
+                </td>
+                <td>
+                    Сафари
                 </td>
             </tr>
             <tr>
@@ -206,7 +219,15 @@
                     Мосты
                 </td>
                 <td>
-                    От ВАЗ
+                    ВАЗ классика
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Коробка передач
+                </td>
+                <td>
+                    ВАЗ 2109
                 </td>
             </tr>
             <tr>
@@ -214,15 +235,15 @@
                     Тормоза
                 </td>
                 <td>
-                    Гидравлические
-                </td> 
+                    Дисковые трансмиссионные
+                </td>
             </tr>
             <tr>
                 <td>
                     Габариты
                 </td>
                 <td>
-                    310*198*145
+                    330*195*190
                 </td>
             </tr>
             <tr>
@@ -230,7 +251,7 @@
                     Вес
                 </td>
                 <td>
-                    410 кг
+                    650 кг
                 </td>
             </tr>
             <tr>
@@ -284,13 +305,141 @@
                 </ul>
             </div>
         </section>
+        <section class="section_gallery">
+            <div id="gallery" class="section_gallery_title">
+                <h2>ГАЛЕРЕЯ</h2>
+            </div>
+            <ul class="section_gallery_list">
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k11.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k11.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k21.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k21.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k31.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k31.jpg" alt="alt">
+                       </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k41.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k41.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k51.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k51.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k61.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                    <img src="./image/gallery/k61.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/panel.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/panel.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k12.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k12.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k22.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k22.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k32.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k32.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k42.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k42.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k52.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k52.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k62.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k62.jpg" alt="alt">
+                    </a>
+                </li>
+                <li class="section_gallery_item">
+                    <a href="./image/gallery/k72.jpg" class="section_gallery_link">
+                        <div class="gallery_item_hover">
+                            Посмотреть
+                        </div>
+                        <img src="./image/gallery/k72.jpg" alt="alt">
+                    </a>
+                </li>
+            </ul> 
+            <script>
+                $(".section_gallery_list").magnificPopup({
+                delegate: "a",
+                type: "image",
+                gallery: {
+                    enabled: true
+                }
+            })
+            </script>
+        </section>
     </main>
     <footer>
         <div class="footer">
             <div class="footer_content">
                 <div class="footer_content_domen">
                     <span>
-                        2022 SergeyUskov.ru
+                        2022 kara-kat.ru
                     </span>
                 </div>
                 <div class="footer_content_tel">

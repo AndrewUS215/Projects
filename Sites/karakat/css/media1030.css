@@ -1,16 +1,16 @@
   @media screen and (max-width: 1030px) {
     
+    .header_back {
+      min-height: 700px;
+      background-size: 1000px;
+    }
+
     .section_advantage_item {
       margin-bottom: 20px;
     }
 
     .header_back {
-        background-size: cover;
-        background-position-x: 50% ;
-        min-height: 800px;
-        background-image: url(../image/moto.jpg);
-        background-repeat: no-repeat;
-        animation: bg-animation 25s ease-in-out infinite;
+      background-position-x: 50% ;
     }
 
     .section_advantage_item:not(:last-child) {

@@ -1,4 +1,13 @@
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 820px) {
+
+    .header_back {
+        min-height: 600px;
+        background-size: 800px;
+    }
+
+    .construction_trigger {
+        margin-top: 100px;
+    }
 
     .footer_content {
         min-height: 60px;
