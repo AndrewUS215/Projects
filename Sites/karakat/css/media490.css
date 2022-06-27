@@ -48,6 +48,11 @@
         padding: 13px 9px 9px 9px;
     }
 
+    .section_assortment_title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .section_characteristics_table {
         font-size: 10px;
     }
@@ -58,6 +63,11 @@
     
     .section_characteristics_table td {
         border-bottom: 1px solid #F2F8F8;
+    }
+
+    .section_advantage_title {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .section_advantage_item_image img {
@@ -77,6 +87,11 @@
         font-size: 12px;
         min-width: 130px;
         padding-top: 15px;
+    }
+
+    .section_gallery_title {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .footer {

@@ -35,7 +35,19 @@
         border-bottom: 3px solid #F2F8F8;
     }
     
-      .section_characteristics_table td {
+    .section_characteristics_table td {
         border-bottom: 3px solid #F2F8F8;
+    }
+
+    .section_characteristics_content {
+        margin-bottom: 30px;
+      }
+
+    .characteristics_text {
+        font-size: 16px;
+    }
+
+    .section_advantage {
+        margin-top: 30px;
     }
 }

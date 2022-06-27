@@ -13,7 +13,4 @@
       background-position-x: 50% ;
     }
 
-    .section_advantage_item:not(:last-child) {
-        margin-right: 20px;
-    }
   }

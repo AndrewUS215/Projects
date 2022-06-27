@@ -5,11 +5,35 @@
         background-size: 800px;
     }
 
+    .header_left_city {
+        font-size: 12px;
+    }
+
+    .header_right_span_time {
+        font-size: 12px;
+    }
+
+    .header_right_tel {
+        font-size: 20px;
+    }
+
+    .nav_list {
+        font-size: 16px;
+    }
+
     .construction_trigger {
         margin-top: 100px;
     }
 
     .footer_content {
         min-height: 60px;
+    }
+
+    .characteristics_content_foto img{
+        height: 250px;
+    }
+
+    .characteristics_content_foto2 img{
+        height: 250px;
     }
 }

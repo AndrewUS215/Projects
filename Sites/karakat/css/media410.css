@@ -1,5 +1,9 @@
 @media screen and (max-width: 410px) {
 
+    p {
+        font-size: 10px;
+    }
+
     .header_back {
         background-size: 150%;
     }
@@ -38,5 +42,13 @@
     .popup_content {
         min-width: 280px;
         font-size: 11px;
+    }
+
+    .characteristics_content_foto img{
+        height: 150px;
+    }
+
+    .characteristics_content_foto2 img{
+        height: 150px;
     }
 }
