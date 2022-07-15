@@ -1,0 +1,1 @@
+mvn -P ExecuteTestSuite test
