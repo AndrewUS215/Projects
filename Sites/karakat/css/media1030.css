@@ -5,12 +5,13 @@
       background-size: 1000px;
     }
 
-    .section_advantage_item {
-      margin-bottom: 20px;
-    }
-
     .header_back {
       background-position-x: 50% ;
+    }
+
+    .characteristics_text {
+      margin-left: 150px;
+      margin-right: 150px;
     }
 
   }

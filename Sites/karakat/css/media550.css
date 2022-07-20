@@ -35,6 +35,11 @@
       padding: 15px 11px 11px 11px;
     }
 
+    .characteristics_text {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
     .footer_content_domen {
       font-size: 16px;
     }
@@ -43,9 +48,12 @@
       font-size: 16px;
     }
 
-    .header_right_tel {
-      align-items: center;
-      height: 30px;
+    .header_link_tel {
+      height: 20px;
+      background-size: 18px;
+    }
+
+    .header_right_telegram {
       background-size: 18px;
     }
 
@@ -61,7 +69,7 @@
       font-size: 12px;
     }
 
-  .section_characteristics_table th {
+    .section_characteristics_table th {
       border-bottom: 2px solid #F2F8F8;
     }
   
